@@ -1,0 +1,8 @@
+dist
+dev-dist
+coverage
+node_modules
+docs/FRONTEND_GUIDE.md
+docs/FRONTEND_PROMPT.md
+docs/OPERATIONS.md
+package-lock.json

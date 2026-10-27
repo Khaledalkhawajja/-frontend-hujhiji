@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Colour tokens as "R G B" so Tailwind can add opacity. Maroon and grey follow the AUM look. */
+@layer base {
+  :root {
+    --page: 243 244 246;
+    --surface: 255 255 255;
+    --subtle: 250 251 251;
+    --border: 225 230 233;
+    --border-strong: 188 198 204;
+    --ink: 30 36 39;
+    --ink-2: 92 107 115;
+    --ink-muted: 120 133 140;
+    --brand: 139 30 38;
+    --brand-dark: 110 20 25;
+    --brand-tint: 247 232 233;
+    --brand-ink: 255 255 255;
+    --slate: 95 122 135;
+    --slate-deep: 38 50 56;
+    --slate-tint: 233 238 241;
+    --ok: 46 125 79;
+    --ok-tint: 228 242 233;
+    --warn: 168 106 0;
+    --warn-tint: 251 240 218;
+    --bad: 179 38 30;
+    --bad-tint: 251 230 228;
+    color-scheme: light;
+  }
+
+  .dark {
+    --page: 18 22 25;
+    --surface: 27 33 37;
+    --subtle: 32 39 43;
+    --border: 46 56 61;
+    --border-strong: 72 85 92;
+    --ink: 232 236 238;
+    --ink-2: 169 182 189;
+    --ink-muted: 135 150 158;
+    --brand: 214 94 102;
+    --brand-dark: 236 132 139;
+    --brand-tint: 58 30 33;
+    --brand-ink: 26 8 10;
+    --slate: 140 168 181;
+    --slate-deep: 210 222 228;
+    --slate-tint: 38 48 53;
+    --ok: 98 196 138;
+    --ok-tint: 25 52 37;
+    --warn: 230 170 70;
+    --warn-tint: 58 44 18;
+    --bad: 240 120 110;
+    --bad-tint: 64 28 26;
+    color-scheme: dark;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-page font-sans text-ink antialiased;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-brand ring-offset-2 ring-offset-page;
+  }
+}
